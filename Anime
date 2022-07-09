@@ -24,5 +24,5 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
-wait(0.5)
+wait(10)
 game:GetService("ReplicatedStorage").endpoints.client_to_server.vote_start:InvokeServer()
