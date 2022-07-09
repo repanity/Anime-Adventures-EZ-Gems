@@ -3,13 +3,13 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
-wait()
+wait(5)
 local args = {
     [1] = "namek_infinite"
 }
 
 game:GetService("ReplicatedStorage").endpoints.client_to_server.request_infinite_leaderboard:InvokeServer(unpack(args))
-wait()
+wait(5)
 local args = {
     [1] = "_lobbytemplategreen8",
     [2] = "namek_infinite",
@@ -18,7 +18,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
-wait(0)
+wait(3)
 local args = {
     [1] = "_lobbytemplategreen8"
 }
