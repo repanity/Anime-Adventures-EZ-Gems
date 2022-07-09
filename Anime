@@ -2,7 +2,7 @@ local args = {
     [1] = "_lobbytemplategreen10"
 }
 
-game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").endpoints.client_to_server.request_leave_lobby:InvokeServer(unpack(args))
 wait()
 local args = {
     [1] = "namek_infinite"
